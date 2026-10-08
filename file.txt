@@ -1,0 +1,17 @@
+file handling is used to manage file data this is new line3. Reading in different ways
+Method What you get Use when
+f.read() Whole file as one string Small files
+f.readline() One line at a time Manual control
+f.readlines() List of all lines Small files, need a list
+for line in f: One line per loop Big files (memory-friendly)
+with open("notes.txt", "r", encoding="utf-8") as f:
+    for line in f:                 # reads one line at a time
+        print(line.strip())        # strip() removes the 
+
+4. Appending
+with open("notes.txt", "a", encoding="utf-8") as f:
+    f.write("Added a new line
+")
+Python File & Exception Handling  |  Page 2
+5. Working with paths (pathlib)
+pathlib is the modern way to handle file paths. It works on Windows, Linux and Mac without changesthis is new line
